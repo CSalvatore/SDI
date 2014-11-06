@@ -50,7 +50,7 @@ else if(userOperator == "-")
 {
 	var userAnswer = mathSub(userNum1, userNum2);
 }
-if(userAnswer == NaN || userAnswer == undefined || userAnswer == "Infinity")
+if(userAnswer == "NaN" || userAnswer == "undefined" || userAnswer == "Infinity")
 {
 	console.log("The answer is undefined or imaginary.");
 }
