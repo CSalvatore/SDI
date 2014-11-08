@@ -17,10 +17,18 @@ var arrayFunction = function()
 	familyArray.push("Michelle");
 	relationArray.push("Sister-in-Law");
 	
+	familyArray.reverse();
+	relationArray.reverse();
+	
+	var removedFamily = familyArray.pop();
+	var removedRelation = relationArray.pop();
+	
 	for(var i = 0; i < familyArray.length; i++)
 	{
 		console.log(familyArray[i] + " is my " + relationArray[i] + ".\n");
 	}
+	
+	console.log(removedFamily + " my " + removedRelation + " was removed from the list.");
 };
 
 arrayFunction();
