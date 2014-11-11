@@ -1,0 +1,24 @@
+var jsonData =
+{
+	"video games":
+	[
+		{
+			"title": "Halo Master Chief Collection",
+			"hero": "Master Chief",
+			"villain": "Covenant",
+			"released": "Nov 11, 2014",
+		},
+		{
+			"title": "Sunset Overdrive",
+			"hero": "You",
+			"villain": "OD",
+			"released": "Oct 28, 2014",
+		},
+		{
+			"title": "Call of Duty: Advanced Warfare",
+			"hero": "Jack Mitchell",
+			"villain": "Jonathan Irons",
+			"released": "Nov 3, 2014",
+		},
+	]
+};
