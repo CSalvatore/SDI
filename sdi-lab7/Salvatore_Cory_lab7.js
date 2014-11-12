@@ -12,24 +12,28 @@ var gamesConstructor = function(gameTitle, gameHero, gameVillain, gameReleased)
 	this.released = gameReleased;
 };
 
-var constructor = function()
-{
-	newObject = new gamesConstructor(jsonData.videogames[0].title, jsonData.videogames[0].hero, jsonData.videogames[0].villain, jsonData.videogames[0].released);
-};
-
 var jsonFunction = function()
 {
-	for(var element in jsonData.cars)
+	for(var element in jsonData.videogames)
 	{
-	for(var nextKey in jsonData.cars[element])
-	{
-		console.log("The next key is is " + nextKey);
-		console.log(jsonData[element[nextKey]]);
+		if(element == 0)
+		{
+			object1 = new gamesConstructor(jsonData.videogames[element].title, jsonData.videogames[element].hero, jsonData.videogames[element].villain, jsonData.videogames[element].released);
+		}
+		else if(element == 1)
+		{
+			object2 = new gamesConstructor(jsonData.videogames[element].title, jsonData.videogames[element].hero, jsonData.videogames[element].villain, jsonData.videogames[element].released);
+		}
+		else if(element == 2)
+		{
+			object3 = new gamesConstructor(jsonData.videogames[element].title, jsonData.videogames[element].hero, jsonData.videogames[element].villain, jsonData.videogames[element].released);
+		}
 	}
-	}
+	
 };
 
-constructor();
 jsonFunction();
 
-console.log(jsonData);
+console.log(object1.hero + " is the hero in the videogame " + object1.title + ". The villain is " + object1.villain + ". The game was released " + object1.released + ".");
+console.log(object2.hero + " is the hero in the videogame " + object2.title + ". The villain is " + object2.villain + ". The game was released " + object2.released + ".");
+console.log(object3.hero + " is the hero in the videogame " + object3.title + ". The villain is " + object3.villain + ". The game was released " + object3.released + ".");
