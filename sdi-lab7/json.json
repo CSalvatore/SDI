@@ -1,6 +1,6 @@
 var jsonData =
 {
-	"video games":
+	"videogames":
 	[
 		{
 			"title": "Halo Master Chief Collection",
