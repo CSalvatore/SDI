@@ -4,14 +4,6 @@
 // SDI 1411
 // Lab 7 Objects
 
-var gamesConstructor = function(gameTitle, gameHero, gameVillain, gameReleased)
-{
-	this.title = gameTitle;
-	this.hero = gameHero;
-	this.villain = gameVillain;
-	this.released = gameReleased;
-};
-
 var jsonFunction = function()
 {
 	for(var element in jsonData.videogames)
@@ -32,8 +24,16 @@ var jsonFunction = function()
 	
 };
 
+var gamesConstructor = function(gameTitle, gameHero, gameVillain, gameReleased)
+{
+	this.title = gameTitle;
+	this.hero = gameHero;
+	this.villain = gameVillain;
+	this.released = gameReleased;
+};
+
 jsonFunction();
 
-console.log(object1.hero + " is the hero in the videogame " + object1.title + ". The villain is " + object1.villain + ". The game was released " + object1.released + ".");
-console.log(object2.hero + " is the hero in the videogame " + object2.title + ". The villain is " + object2.villain + ". The game was released " + object2.released + ".");
-console.log(object3.hero + " is the hero in the videogame " + object3.title + ". The villain is " + object3.villain + ". The game was released " + object3.released + ".");
+console.log(object1.hero + " is the hero in the videogame " + object1.title + ". The villain is " + object1.villain + ". The game was released " + object1.released + ". It is " + object1.owned + " that I own this game.");
+console.log(object2.hero + " is the hero in the videogame " + object2.title + ". The villain is " + object2.villain + ". The game was released " + object2.released + ". It is " + object1.owned + " that I own this game.");
+console.log(object3.hero + " is the hero in the videogame " + object3.title + ". The villain is " + object3.villain + ". The game was released " + object3.released + ". It is " + object1.owned + " that I own this game.");
