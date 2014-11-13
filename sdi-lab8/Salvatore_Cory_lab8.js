@@ -58,9 +58,23 @@
 // 
 // emailCheck();
 
-var threeStrings = function(userString, firstSep, secondSep)
+var threeStrings = function(stringList, firstSep, secondSep)
 {
+	var listArray = stringList.split(firstSep);
+	var listString = "";
 	
+	console.log("The " + firstSep + "'s in the list will be replaced with " + secondSep + "'s.");
+	console.log(stringList);
+	
+	for (var i=0; i < listArray.length; i++)
+	{
+		var listWord = listArray[i].charAt(0);
+		
+		listList = listWord + listArray[i].substr(1);
+		
+		listString = listString + listList + secondSep;
+	}
+	console.log(listString);
 };
 
-threeStrings(prompt("Enter a string"), prompt("Enter a separator"), prompt("Enter a new seperator"));
+threeStrings("Apple,Orange,Banana,Grapes", ",", "/");
