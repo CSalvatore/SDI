@@ -5,47 +5,48 @@
 // Lab 9 Numbers and Dates
 
 // Problem 1
-// var newNumDec;
-// 
-// var numFormat = function()
-// {
-	// var numDec	  = 9.23415164535734635473453;
-	// var numFormat = 7;
-// 	
-	// console.log("The number, " + numDec + ", will be shortened to " + numFormat + " spaces after the decimal point.");
-// 	
-	// numDec = numDec.toFixed(numFormat);
-// 	
-	// return numDec;
-// };
-// 
-// newNumDec = numFormat();
-// 
-// console.log(newNumDec + " is the new number.");
+
+var newNumDec;
+
+var numberFormat = function()
+{
+	var numDec	  = 9.23415164535734635473453;
+	var format = 7;
+	
+	console.log("The number, " + numDec + ", will be shortened to " + numFormat + " spaces after the decimal point.");
+	
+	numDec = numDec.toFixed(numFormat);
+	
+	return numDec;
+};
+
+newNumDec = numFormat();
+
+console.log(newNumDec + " is the new number.");
 
 // Problem 2
 
-// var numString;
-// 
-// var stringNums = function()
-// {
-	// var number = "534";
-// 	
-	// var validString = isNaN(number);
-// 	
-	// if(!validString)
-	// {
-		// return number;
-	// }
-	// else
-	// {
-		// console.log("Thats not a valid number.");
-	// }
-// };
-// 
-// numString = stringNums();
-// 
-// console.log("The number entered is " + numString + ".");
+var numString;
+
+var stringNums = function()
+{
+	var number = "534";
+	
+	var validString = isNaN(number);
+	
+	if(!validString)
+	{
+		return number;
+	}
+	else
+	{
+		console.log("Thats not a valid number.");
+	}
+};
+
+numString = stringNums();
+
+console.log("The number entered is " + numString + ".");
 
 // Problem 3
 
