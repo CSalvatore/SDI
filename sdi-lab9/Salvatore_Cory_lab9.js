@@ -15,7 +15,7 @@ var numberFormat = function()
 	
 	console.log("The number, " + numDec + ", will be shortened to " + numFormat + " spaces after the decimal point.");
 	
-	numDec = numDec.toFixed(numFormat);
+	numDec = numDec.toFixed(format);
 	
 	return numDec;
 };
